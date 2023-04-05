@@ -2,7 +2,7 @@ const express = require("express");
 const routes = require("./routes/index");
 const cors = require("cors");
 const AppError = require("./utils/appError");
-const globalErrorHandling = require("./Controller/ErrorController");
+const globalErrorHandling = require("./controller/ErrorController");
 const app = express();
 const querystring = require("querystring");
 
