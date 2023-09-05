@@ -51,12 +51,11 @@ app.use(
       "http://localhost:3001",
       "http://localhost:3000",
       "https://quranhadith.netlify.app",
+      "https://quranhadith.netlify.app/",
     ],
     credentials: true,
   })
 );
-
-// Getting the user from Google with the code
 
 app.use("/v1", routes);
 
