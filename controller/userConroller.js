@@ -150,7 +150,6 @@ exports.oauth2callback = catchAsync(async (req, res, next) => {
       Authorization: `Bearer ${code}`,
     },
   }).then(async ({ data }) => {
-    console.log({ data });
     const { email, email_verified, family_name } = data;
     if (!email_verified) return;
     const userExist = await userRepository.getOne({ email });
